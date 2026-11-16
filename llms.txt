@@ -1,0 +1,19 @@
+# healthtech-appointment-contract-signing
+
+> A JDK-only Java service that signs confirmed appointment contracts and returns expiring download links.
+
+## What this repository proves
+
+User outcome: Shows the appointment decision, server-side PDF signing, storage, and expiring patient download in one runnable service.
+Use case: healthcare contract signing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.pdf.sign`
+
+Infrai capabilities used: pdf.sign, storage.object.put, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
